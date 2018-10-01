@@ -1,5 +1,5 @@
 <div class="container">
-		<form action="?controller=pages&action=list" method="POST">
+		<form action="<?php echo URL_BASE . 'pages/save' ?>" method="POST">
 	    	<div class="form-group">
 			  	<label for="NameTask">Nome</label>
 			    <input type="text" class="form-control" placeholder="Nome da tarefa. (Ex.: Preparar o almoço)" name="name" required>
