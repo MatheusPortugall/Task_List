@@ -1,6 +1,6 @@
 
 <div class="container">
-	<table class="table table-sm">
+	<table class="table">
 		<tr>
 		    <th scope="col">Tarefas</th>
 		    <th scope="col">Feita</th>
