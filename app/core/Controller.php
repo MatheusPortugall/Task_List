@@ -3,8 +3,6 @@ namespace app\core;
 
 class Controller{
      public function load($viewName, $viewData=array()){
-     	if ($viewName=='')
-     		$viewName='teste';
        extract($viewData); 
        include "app/views/" . $viewName .".php";
    }

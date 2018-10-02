@@ -28,4 +28,17 @@ class Tasks extends Model
 
 		return $this->db->lastInsertId();
 	}
+
+	public function getTasks($id){
+		$result = array();
+		$sql = "SELECT FROM `tasks` WHERE `id` = :id";
+		$query = $this->db->prepare($sql);
+		$query->bindValue(":id", $id);
+		$query->execute();
+
+		if($query->rowCount() > 0) {
+			$result = $query->fetch(\PDO::FETCH_OBJ);
+		}
+		return $result;
+	}
 }

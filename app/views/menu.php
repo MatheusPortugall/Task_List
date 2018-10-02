@@ -1,7 +1,7 @@
 <div class="container">
 		<ul class="nav justify-content-center">
 		  	<li class="nav-item">
-		    	<a class="nav-link" href="<?php echo URL_BASE .'pages/list' ?>">Lista de Tarefas</a>
+		    	<a class="nav-link" href="<?php echo URL_BASE .'pages/tasks' ?>">Lista de Tarefas</a>
 		  	</li>
 
 		  	<li class="nav-item">
