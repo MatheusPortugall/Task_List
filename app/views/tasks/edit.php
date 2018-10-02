@@ -1,13 +1,15 @@
 <div class="container">
-		<form action="<?php echo URL_BASE . 'pages/save' ?>" method="POST">
+		<form action="<?php  echo URL_BASE . 'pages/save' ?>" method="POST">
+         <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+         <input type="hidden" name="id" value="<?php echo $tasks->id ?>">
 	    	<div class="form-group">
 			  	<label >Nome</label>
-			    <input type="text" class="form-control" name="name" value="<?php echo $task->name ?>">
+			    <input type="text" class="form-control" name="name" value="<?php  echo $tasks->name ?>">
 		 	</div>
 
 			<div class="form-group">
 				<label >Descrição</label>
-			    <input type="text" class="form-control" name="description" value="<?php echo $task->description ?>">
+			    <input type="text" class="form-control" name="description" value="<?php  echo $tasks->description ?>">
 			</div>
 
 			<div class="form-group">
@@ -35,8 +37,8 @@
 				</select>
 			    <small class="form-text text-muted">Se a tarefa foi concluída ou não.</small>
 		    </div>
-		    <input type="hidden" name="id" value="<?php echo $task->id ?>">
+		    
 	    	<button type="submit" class="btn btn-success">Cadastrar tarefa</button>
 
 		</form>
-	</div>
+	</div> 

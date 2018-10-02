@@ -12,8 +12,8 @@
 		    <td><?php echo $tasks->completed ?></td>
 		    <td>
 		    	<a href="<?php echo URL_BASE .'pages/details/'. $tasks->id ?>" class="btn btn-success">Visualizar</a>
-		    	<a href="<?php echo URL_BASE .'pages/edit/'. $tasks->id ?>" class="btn btn-success">Editar</a>
-		    	<a href="<?php echo URL_BASE .'pages/delete/'. $tasks->id ?>" class="btn btn-success">Excluir</a>
+		    	<a href="<?php echo URL_BASE .'pages/edit/'. $tasks->id ?>" class="btn btn-primary">Editar</a>
+		    	<a href="<?php echo URL_BASE .'pages/delete/'. $tasks->id ?>" class="btn btn-danger">Excluir</a>
 		    </td>
 		</tr>
 		<?php } ?>

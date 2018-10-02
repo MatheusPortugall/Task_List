@@ -3,7 +3,7 @@
 define("SERVER", "localhost");
 define("DBNAME", "tasklist");
 define("USER", "root");
-define("PASSWORD", "1234");
+define("PASSWORD", "");
 
 
 define('CONTROLLER_STANDARD', 'index');
