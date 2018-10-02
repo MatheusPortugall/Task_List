@@ -38,7 +38,7 @@
 			    <small class="form-text text-muted">Se a tarefa foi concluída ou não.</small>
 		    </div>
 		    
-	    	<button type="submit" class="btn btn-success">Cadastrar tarefa</button>
+	    	<button type="submit" class="btn btn-success">Editar tarefa</button>
 
 		</form>
 	</div> 
